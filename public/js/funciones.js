@@ -13,7 +13,7 @@ function sumarVotos(){
     }
     totalVotado.innerText  = `${conteo}`;
 
-    if(totalVotado.textContent == "100" && mail.value == mail2.value){
+    if(totalVotado.textContent == "100" && mail.value == mail2.value && mail.value != ""){
         btnVotar.removeAttribute('disabled');
 
     } else {
@@ -29,7 +29,7 @@ function aplicarEvents(inputs){
         input.addEventListener('change', sumarVotos);
     }
     mail.addEventListener('change', sumarVotos);
-    mail2.addEventListener('change', sumarVotos);
+    mail.addEventListener('change', sumarVotos);
 };
 
 
