@@ -1,0 +1,61 @@
+.boletas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+.boleta {
+    max-width: 100%;
+    min-width: 23%;
+    border: 2px black solid;
+    overflow: hidden;
+}
+
+
+#porcMassa, 
+#porcGrabois,
+#porcLarreta,
+#porcBullrich,
+#porcMilei,
+#porcSolano,
+#porcMoreno,
+#porcEscobar,
+#porcSchiaretti,
+#porcCastanieira,
+#porcRamal,
+#porcBregman,
+#porcOtros,
+#porcBlanco {
+    width: 4em;
+}
+
+.datos label {
+    margin: 2px;
+}
+
+.datos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+.login {
+    text-align: end;
+}
+
+
+

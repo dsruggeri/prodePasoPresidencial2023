@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- link a bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <!-- links a estilos -->
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <title>Prode Electoral PASO 2023</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+
+    <h1>Prode Electoral Presidencial</h1>
+    <h3>Algunas reglas:</h3>
+    <ul>
+      <li>Prode recreativo para poder transitar la ansiedad electoral que nos embarga.</li>
+      <li>Los campos de "nombre" y "mail" son solamente para poder avisarle a quien gane, que ganó.</li>
+      <li>El premio es: nada.</li>
+      <li>¿Están todas las opciones electorales? No.</li>
+      <li>El botón de "VOTAR" no se activa si no están emitidos el 100% de los resultados del prode.</li>
+      <li>El botón de "VOTAR" no se activa si los campos "mail" y "repetir mail" son distintos.</li>
+      <li>El escrutinio final, se hará a mano. ¿Por qué? porque todavía no sé cómo programarlo.</li>
+      <li>El diseño es horrible, ya lo sé. Apenas intento saber backend.</li>
+    </ul>
+
+    <form action="/votar" method="post">
+      <h6>Datos</h6>
+      <div class="datos">
+
+        <div class="col-md-3 col-sm-12">
+          <label for="nombre" hidden>Nombre:</label>
+          <input type="text" name="nombre" id="nombre" required placeholder="nombre...">
+          <br>
+        </div>
+
+        <div class="col-md-3 col-sm-12">
+          <label for="mail" hidden>Email</label>
+          <input type="email" name="email" id="email" required placeholder="email">
+          <br>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <label for="repeatMail" hidden>Confirmar email:</label>
+          <input type="email" name="email2" id="email2" required placeholder="repetir email">
+          <br>
+        </div>
+      </div>
+
+      <div class="boletas">
+
+        <!--Massa-->
+        <div class="card boleta">
+          <img src="./images/boletas/sergioMassa.png" class="card-img-top" alt="Sergio Massa">
+          <div class="card-body">
+
+            <div>
+              <label for="sergioMassa">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="sergioMassa" id="porcMassa" value="0"> <span>%</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--Grabois-->
+        <div class="card boleta">
+          <img src="./images/boletas/juanGrabois.png" class="card-img-top" alt="Juan Grabois">
+          <div class="card-body">
+
+            <div>
+              <label for="juanGrabois">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="juanGrabois" id="porcGrabois" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!--Larreta-->
+        <div class="card boleta">
+          <img src="./images/boletas/horacioRodriguezLarreta.png" class="card-img-top" alt="Horacio Rodríguez Larreta">
+          <div class="card-body">
+
+            <div>
+              <label for="rodriguezLarreta">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="rodriguezLarreta" id="porcLarreta" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Bullrich-->
+        <div class="card boleta">
+          <img src="./images/boletas/patriciaBullrich.png" class="card-img-top" alt="Patricia Bullrich">
+          <div class="card-body">
+
+            <div>
+              <label for="patriciaBullrich">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="patriciaBullrich" id="porcBullrich" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Milei-->
+        <div class="card boleta">
+          <img src="./images/boletas/javierMilei.png" class="card-img-top" alt="Javier Milei">
+          <div class="card-body">
+
+            <div>
+              <label for="javierMilei">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="javierMilei" id="porcMilei" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Bregman-->
+        <div class="card boleta">
+          <img src="./images/boletas/myriamBregman.png" class="card-img-top" alt="Myriam Bregman">
+          <div class="card-body">
+
+            <div>
+              <label for="myriamBregman">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="myriamBregman" id="porcBregman" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Solano-->
+        <div class="card boleta">
+          <img src="./images/boletas/gabrielSolano.png" class="card-img-top" alt="GAbriel Solano">
+          <div class="card-body">
+
+            <div>
+              <label for="gabrielSolano">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="gabrielSolano" id="porcSolano" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Moreno-->
+        <div class="card boleta">
+          <img src="./images/boletas/guillermoMoreno.png" class="card-img-top" alt="Guillermo Moreno">
+          <div class="card-body">
+
+            <div>
+              <label for="guillermoMoreno">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="guillermoMoreno" id="porcMoreno" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Schiaretti-->
+        <div class="card boleta">
+          <img src="./images/boletas/juanSchiaretti.png" class="card-img-top" alt="Juan Schiaretti">
+          <div class="card-body">
+
+            <div>
+              <label for="juanSchiaretti">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="juanSchiaretti" id="porcSchiaretti" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Castañeira-->
+        <div class="card boleta">
+          <img src="./images/boletas/manuelaCastanieira.png" class="card-img-top" alt="Manuela Castañeira">
+          <div class="card-body">
+
+            <div>
+              <label for="manuelaCastanieira">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="manuelaCastanieira" id="porcCastanieira" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Escobar-->
+        <div class="card boleta">
+          <img src="./images/boletas/jesusEscobar.png" class="card-img-top" alt="Jesús Escobar">
+          <div class="card-body">
+
+            <div>
+              <label for="jesusEscobar">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="jesusEscobar" id="porcEscobar" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Ramal-->
+        <div class="card boleta">
+          <img src="./images/boletas/marceloRamal.png" class="card-img-top" alt="Marcelo Ramal">
+          <div class="card-body">
+
+            <div>
+              <label for="marceloRamal">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="marceloRamal" id="porcRamal" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--OTROS-->
+        <div class="card boleta">
+          <img src="./images/boletas/otros.png" class="card-img-top" alt="Otros">
+          <div class="card-body">
+
+            <div>
+              <label for="otros">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="otros" id="porcOtros" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Blanco-->
+        <div class="card boleta">
+          <img src="./images/boletas/blanco.png" class="card-img-top" alt="blanco">
+          <div class="card-body">
+
+            <div>
+              <label for="blanco">Porcentaje:</label>
+            </div>
+            <div>
+              <input type="number" name="blanco" id="porcBlanco" value="0"> <span>%</span>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+      <div>
+        <h6>Total votado: <span id="votado"></span><span>%</span></h6>
+      </div>
+      <div>
+        <button type="submit" id="btnVotar" disabled><iconify-icon icon="fluent:vote-20-regular"></iconify-icon>votar</button>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="container">
+    <a href="/login" class="login">
+      <h6><iconify-icon icon="game-icons:dead-head"></iconify-icon></h6>
+    </a>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/funciones.js"></script>
+
+  <!-- link a iconify -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>

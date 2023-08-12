@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- link a bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <!-- links a estilos -->
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <title>Prode Electoral PASO 2023</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Escrutinio</h1>
+
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">nombre</th>
+                <th scope="col">mail</th>
+                <th scope="col">Massa</th>
+                <th scope="col">Grabois</th>
+                <th scope="col">Larreta</th>
+                <th scope="col">Bullrich</th>
+                <th scope="col">Milei</th>
+                <th scope="col">Bregman</th>
+                <th scope="col">Solano</th>
+                <th scope="col">Moreno</th>
+                <th scope="col">Escobar</th>
+                <th scope="col">Schiaretti</th>
+                <th scope="col">Castañeira</th>
+                <th scope="col">Ramal</th>
+                
+                <th scope="col">Otros</th>
+                <th scope="col">Blanco</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% for(const voto of escrutinio) { %>
+              <tr>
+                
+                <th scope="row"><%= voto.nombre %></th>
+                <td><%= voto.mail %></td>
+                <td><%= voto.massa %></td>
+                <td><%= voto.grabois %></td>
+                <td><%= voto.larreta %></td>
+                <td><%= voto.bullrich %></td>
+                <td><%= voto.milei %></td>
+                <td><%= voto.bregman %></td>
+                <td><%= voto.solano %></td>
+                <td><%= voto.moreno %></td>
+                <td><%= voto.escobar %></td>
+                <td><%= voto.schiaretti %></td>
+                <td><%= voto.castanieira %></td>
+                <td><%= voto.ramal %></td>
+                <td><%= voto.otros %></td>
+                <td><%= voto.blanco %></td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+    </div>
+
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+  crossorigin="anonymous"></script>
+
+<!-- link a iconify -->
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
